@@ -1,0 +1,28 @@
+.slideshow-container {
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+    overflow-x: auto;
+}
+
+.slider {
+    margin: 15px 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.slideshow-container button {
+    width: 50px;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+}
+
+.slideshow-container img {
+    margin: 0 5px;
+    object-fit: cover;
+}
