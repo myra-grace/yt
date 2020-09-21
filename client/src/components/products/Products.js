@@ -2,34 +2,20 @@ import React, { useEffect, useState, useRef } from "react";
 import Slideshow from "../slideshow/Slideshow";
 import "./Products.css";
 import "../slideshow/Slideshow.css";
+import ukulele from '../../assets/products/20200921_171526.jpg';
 
 const Products = (props) => {
   let productsArr = [
-    { alt: "Outrun palette", src: "https://i.redd.it/aepphltiqy911.png", link: "https://i.redd.it/aepphltiqy911.png" },
-    { alt: "Outrun code", src: "https://i.redd.it/jfr0ixsgm9v21.jpg", link: "https://i.redd.it/jfr0ixsgm9v21.jpg" },
+    { alt: "My ukulele", src: ukulele, link: "", origin: "local" },
+    { alt: "Outrun code", src: "https://i.redd.it/jfr0ixsgm9v21.jpg", link: "https://i.redd.it/jfr0ixsgm9v21.jpg", origin: "net" },
+    { alt: "Neon signs", src: "https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/c_limit,w_450/v1554401037/1554401037.jpg", link: "", origin: "net" },
   ];
-
-  // const slideLoader = (arr) => {
-  //   arr.forEach(obj => {
-  //     console.log(obj);
-  //   });
-  // };
-
-  // slideLoader(productsArr);
 
   return (
     <div className="products-container">
       <h1>Products</h1>
       <div className="slideshow-container">
-        {productsArr.forEach(obj => {
-          console.log(obj);
-          let palt = obj.alt;
-          let psrc = obj.src;
-          let plink = obj.link;
-          return (
-            <Slideshow vw={props.vw} vh={props.vh} palt={palt} psrc={psrc} plink={plink} />
-          )
-        })}
+          <Slideshow vw={props.vw} vh={props.vh} theArray={productsArr} pageLink="" keyWord="Products" />
       </div>
     </div>
   );

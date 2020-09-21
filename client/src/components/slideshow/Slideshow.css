@@ -3,26 +3,47 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    place-content: center;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .slider {
     margin: 15px 0;
     padding: 0;
     white-space: nowrap;
-    overflow: auto;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
 }
 
-.slideshow-container button {
+/* .slideshow-container button {
     width: 50px;
     height: auto;
     border: none;
     background-color: transparent;
     backdrop-filter: blur(4px);
+} */
+
+.slider a {
+    margin: auto;
+    /* overflow: hidden; */
 }
 
-.slideshow-container img {
+.slider img {
     margin: 0 5px;
+    /* transition: transform .5s ease-in-out; */
+    transition: transform 1s, filter 1s ease-in-out;
+    filter: blur(0);
+}
+.slider img:hover {
+    /* transform: scale(1.5); */
+    filter: blur(2px);
+    transform: scale(1.5);
+}
+
+.local {
+    object-fit: fill;
+}
+
+.net {
     object-fit: cover;
 }

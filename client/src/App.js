@@ -7,6 +7,7 @@ import Overview from "./components/overview/Overview";
 import Products from "./components/products/Products";
 import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
+import Tools from "./components/tools/Tools";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -74,7 +75,7 @@ function App() {
         <Products vw={vw} vh={vh}/>
       </div>
       <div id="tools">
-        {/* <Features /> */}
+        <Tools vw={vw} vh={vh} />
       </div>
       <div id="gallery">
         {/* <h1>Gallery</h1> */}
