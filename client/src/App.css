@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap");
 /* font-family: 'Contrail One', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+/* font-family: 'Prata', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+
+
 .App {
   text-align: center;
   width: 100%;
@@ -22,7 +27,7 @@
 .home {
   margin: 20px;
   color: #7c7c7c;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Yanone Kaffeesatz', 'Prata', Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -98,11 +103,10 @@
   width: 100vw;
   height: 80vh;
   margin: 20px 0;
-  background-image: url("https://i.redd.it/aepphltiqy911.png");
+  background-image: url("https://i.pinimg.com/originals/03/b9/b2/03b9b22baddc38bc6bc1e0abef5878ff.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: contain; */
-  background-color: rgb(67, 37, 52);
+  background-size: cover;
   color: #7c7c7c;
 }

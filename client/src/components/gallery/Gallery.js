@@ -6,7 +6,9 @@ const Gallery = (props) => {
     return (
         <div className="gallery-container">
             <h1>Gallery</h1>
-            <Slideshow vw={props.vw} vh={props.vh}/>
+            <div className="slideshow-container">
+                <Slideshow vw={props.vw} vh={props.vh}/>
+            </div>
         </div>
     )
 }
