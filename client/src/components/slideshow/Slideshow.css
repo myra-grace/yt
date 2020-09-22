@@ -23,21 +23,36 @@
     backdrop-filter: blur(4px);
 } */
 
-.slider a {
-    margin: auto;
-    /* overflow: hidden; */
+.a-container {
+    min-width: max-content;
+    margin: 0 5px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
 }
 
+.a-container h3 {
+    margin: auto;
+    padding: 5px;
+    background-color: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255);
+    z-index: 1;
+}
+
+/* .a-container h3:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 1000ms ease-in-out;
+} */
+
 .slider img {
-    margin: 0 5px;
-    /* transition: transform .5s ease-in-out; */
     transition: transform 1s, filter 1s ease-in-out;
     filter: blur(0);
 }
 .slider img:hover {
-    /* transform: scale(1.5); */
-    filter: blur(2px);
-    transform: scale(1.5);
+    filter: blur(1.5px);
+    transform: scale(1.2);
 }
 
 .local {

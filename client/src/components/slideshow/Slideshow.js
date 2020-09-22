@@ -40,7 +40,8 @@ const Slideshow = (props) => {
             plink = "https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"
           }
           return (
-            <a href={plink}>
+            <a className="a-container" href={plink}>
+              <h3>{palt}</h3>
               <img className={origin} src={psrc} alt={palt} width={square} height={square} />
             </a>
           );
