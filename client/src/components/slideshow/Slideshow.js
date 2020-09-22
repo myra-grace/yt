@@ -67,7 +67,7 @@ const Slideshow = (props) => {
         })
       )}
       <a className="moreA" href={pageLink}>
-        <Icon size={`${square}px`} icon={angleDoubleRight} />
+        <Icon className="more-icon" size={`${square - 100}px`} icon={angleDoubleRight} />
         <h2>More {keyWord}</h2>
       </a>
     </div>

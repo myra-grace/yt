@@ -22,8 +22,6 @@
 /* font-family: 'Poiret One', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 /* font-family: 'Staatliches', cursive; */
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
-/* font-family: 'Homemade Apple', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
 /* font-family: 'Libre Barcode 128 Text', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap");
@@ -34,8 +32,12 @@
 /* font-family: 'Sedgwick Ave', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 /* font-family: 'Rajdhani', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-/* font-family: 'Prata', serif; */
+@import url("//db.onlinewebfonts.com/c/970491b79b0c46e858e11fabbe7d43a7?family=Outrun+future");
+/* font-family: 'Outrun future'; */
+@import url("//db.onlinewebfonts.com/c/8174214b59c74c684285ae6b35662282?family=Neoneon");
+/* font-family: "Neoneon"; */
+@import url("//db.onlinewebfonts.com/c/ce0272ed48a4c133bc9a16545b0c6c74?family=Neon+80s");
+/* font-family: "Neon 80s"; */
 
 body {
   margin: 0;
@@ -64,14 +66,14 @@ a, button {
 }
 
 h1 {
-  font-family: 'Permanent Marker', 'Amatic SC', 'Caveat', cursive;
+  font-family: 'Outrun future', 'Shadows Into Light', 'Rajdhani', 'Permanent Marker', 'Amatic SC', 'Caveat', cursive;
   text-align: start;
-  margin: 5px;
-  color: #9ffdff;
-  text-shadow: 0 0 15px #2DE2E6;
+  margin: 30px 10px 10px;
+  color: #75fdff;
+  text-shadow: 0 0 15px #0c8cb5;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
