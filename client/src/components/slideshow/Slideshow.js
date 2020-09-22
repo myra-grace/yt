@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Icon } from 'react-icons-kit'
-import {angleDoubleRight} from 'react-icons-kit/fa/angleDoubleRight'
+import { Icon } from "react-icons-kit";
+import { angleDoubleRight } from "react-icons-kit/fa/angleDoubleRight";
 
 //  PUT A LIMIT ON HOW MANY SLIDES ARE SHOWN. THE REST GO TO A NEW PAGE.
 
@@ -17,10 +17,10 @@ const Slideshow = (props) => {
       setSquare(props.vw - 100);
     }
     if (pageLink === "" || pageLink == undefined) {
-      setPageLink("https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w")
+      setPageLink("https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w");
     }
     if (keyWord === "" || keyWord == undefined) {
-      setKeyWord("please!")
+      setKeyWord("please!");
     }
   }, []);
 
@@ -36,19 +36,39 @@ const Slideshow = (props) => {
           let psrc = obj.src;
           let plink = obj.link;
           let origin = obj.origin;
+          let title = obj.title;
+          let splurge = obj.splurge;
           if (plink === "") {
-            plink = "https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"
+            plink = "https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w";
           }
           return (
-            <a className="a-container" href={plink}>
-              <h3>{palt}</h3>
-              <img className={origin} src={psrc} alt={palt} width={square} height={square} />
+            <div className="general-container" style={{
+              minWidth: `${square}px`,
+              minHeight: `${square}px`,
+            }}>
+            <a
+              className={origin}
+              href={plink}
+              style={{
+                background: `url("${psrc}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="info">
+              <h3 className="alt-title">{palt}</h3>
+              <h3 className="title">{title}</h3>
+              <p className="splurge">{splurge}</p>
+              </div>
             </a>
+            </div>
           );
         })
       )}
-      <a className="moreA" href={pageLink}><Icon size={`${square}px`} icon={angleDoubleRight}/>
-      <h2>More {keyWord}</h2></a>
+      <a className="moreA" href={pageLink}>
+        <Icon size={`${square}px`} icon={angleDoubleRight} />
+        <h2>More {keyWord}</h2>
+      </a>
     </div>
   );
 };
