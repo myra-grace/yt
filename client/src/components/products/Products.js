@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Slideshow from "../slideshow/Slideshow";
 import "./Products.css";
-import "../slideshow/Slideshow.css";
 import ukulele from '../../assets/products/20200921_171526.jpg';
 import strings from '../../assets/products/20200921_171750.jpg';
 

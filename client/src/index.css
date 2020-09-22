@@ -71,6 +71,12 @@ h1 {
   text-shadow: 0 0 15px #2DE2E6;
 }
 
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
 .yticon {
   margin-right: 5px;
   color: #FF0000;

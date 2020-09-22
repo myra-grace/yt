@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
+import "../slideshow/Slideshow.css";
 import { Icon } from "react-icons-kit";
 import { angleDoubleRight } from "react-icons-kit/fa/angleDoubleRight";
 
@@ -24,8 +25,6 @@ const Slideshow = (props) => {
     }
   }, []);
 
-  console.log("props: ", props);
-
   return (
     <div className="slider">
       {!theArray ? (
@@ -45,6 +44,8 @@ const Slideshow = (props) => {
             <div className="general-container" style={{
               minWidth: `${square}px`,
               minHeight: `${square}px`,
+              maxWidth: `${square}px`,
+              maxHeight: `${square}px`,
             }}>
             <a
               className={origin}
@@ -55,10 +56,10 @@ const Slideshow = (props) => {
                 backgroundPosition: "center",
               }}
             >
-              <div className="info">
               <h3 className="alt-title">{palt}</h3>
-              <h3 className="title">{title}</h3>
-              <p className="splurge">{splurge}</p>
+              <div className="info-card-container">
+                <h3 className="title">{title}</h3>
+                <p className="splurge">{splurge}</p>
               </div>
             </a>
             </div>
