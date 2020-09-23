@@ -7,17 +7,10 @@ import {
   Redirect, 
   useHistory,
 } from 'react-router-dom';
-// import logo from './logo.svg';
 import './App.css';
 import { Icon } from 'react-icons-kit'
 import {youtubePlay} from 'react-icons-kit/fa/youtubePlay';
-import Landing from "./components/landing/Landing";
-import Products from "./components/products/Products";
-import Gallery from './components/gallery/Gallery';
-import Footer from './components/footer/Footer';
-import Tools from "./components/tools/Tools";
-import News from "./components/news/News";
-import Overview from "./components/overview/Overview";
+import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 
 function App() {
@@ -43,7 +36,13 @@ function App() {
     setToggle(!toggle);
   };
 
-  const handleAbout = () => {
+  const handleHome = (event) => {
+    event.preventDefault();
+    history.push(`/`);
+  }
+
+  const handleAbout = (event) => {
+    event.preventDefault();
     history.push(`/about`);
   }
 
@@ -57,14 +56,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="navbar">
-        <div className="home"><a className="yticon" href="https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"><Icon size={'15px'} icon={youtubePlay}/></a><a href="#landing">noodle_ship</a></div>
+    <div className="navbar">
+        <div className="home-button"><a className="yticon" href="https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"><Icon size={'15px'} icon={youtubePlay}/></a><button onClick={handleHome}>noodle_ship</button></div>
         <div id="desktop-nav">
           {/* <a href="#overview">Overview</a> */}
           <a href="#products">Products</a>
           <a href="#tools">Tools</a>
           <a href="#gallery">Gallery</a>
-          <button onClick={handleAbout} href="#about">About</button>
+          <button onClick={handleAbout}>About</button>
         </div>
         <div
           ref={settingsButtonRef}
@@ -81,40 +80,15 @@ function App() {
         <a href="#products">Products</a>
         <a href="#tools">Tools</a>
         <a href="#gallery">Gallery</a>
-        <button onClick={handleAbout} href="#about">About</button>
+        <button onClick={handleAbout}>About</button>
       </div>
-
-      {/* <div id="landing">
-        <Landing />
-      </div>
-      <div id="overview">
-        <Overview />
-      </div> */}
-      <div id="news">
-        <News />
-      </div>
-      <div id="products">
-        <Products vw={vw} vh={vh}/>
-      </div>
-      <div id="tools">
-        <Tools vw={vw} vh={vh} />
-      </div>
-      {/* <div id="gallery">
-        <Gallery vw={vw} vh={vh}/>
-      </div> */}
-      <div id="about">
-        {/* <Features /> */}
-      </div>
-      <div id="footer">
-        <Footer/>
-      </div>
-      {/* <Router>
+      <Router>
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route exact path="/" render={() => (<Home vw={vw} vh={vh}/>)} />
           <Route exact path="/about" component={About} />
           <Route path="/*" render={() => <div><h1>Nothing here...</h1> <img style={{borderRadius: "20%"}} src="https://i.gifer.com/3lL0.gif" /> </div>} />
         </Switch>
-      </Router> */}
+      </Router>
     </div>
   );
 }
