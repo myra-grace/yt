@@ -11,14 +11,13 @@ import {
 import './Home.css';
 import { Icon } from 'react-icons-kit'
 import {youtubePlay} from 'react-icons-kit/fa/youtubePlay';
-import Landing from "../../landing/Landing";
 import Products from "../../products/Products";
 import Gallery from '../../gallery/Gallery';
 import Footer from '../../footer/Footer';
 import Tools from "../../tools/Tools";
-import News from "../../news/News";
 import Overview from "../../overview/Overview";
 import About from '../../pages/about/About';
+import Banner from "../../banner/Banner";
 
 const Home = (props) => {
   return (
@@ -31,7 +30,7 @@ const Home = (props) => {
         <Overview />
       </div> */}
       <div id="news">
-        <News />
+        <Banner catch="New Video" title="Ways To Improve Your Playing" linktotext="Watch Here" link="https://youtu.be/-I4kyYMQBLY"/>
       </div>
       <div id="products">
         <Products vw={props.vw} vh={props.vh}/>
@@ -44,9 +43,6 @@ const Home = (props) => {
       </div> */}
       <div id="about">
         {/* <Features /> */}
-      </div>
-      <div id="footer">
-        <Footer/>
       </div>
     </div>
   );

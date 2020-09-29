@@ -8,9 +8,17 @@
 .socials {
     max-width: 100%;
     max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.ytlink {
+.ytlink, .dislink {
     max-width: 40px;
     max-height: 40px;
+    margin: 5px;
+}
+
+.disicon {
+    color: #7289DA;
 }

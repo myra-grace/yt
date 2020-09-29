@@ -8,7 +8,6 @@ const Products = (props) => {
   let productsArr = [
     { alt: "My Ukulele", src: ukulele, link: "", origfitin: "local", title: "KA-TE by Kala", splurge: "This is a tenor ukulele. It used to have a regular high 'G' string but now it has a low 'G' string." },
     { alt: "My Strings", src: strings, link: "", origin: "local", title: "Aquila Reds", splurge: "I currently use Aquila Red Low 'G' strings" },
-    { alt: "Neon Signs", src: "https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/c_limit,w_450/v1554401037/1554401037.jpg", link: "", origin: "net", title: "Title", splurge: "Splurge" },
   ];
 
   return (
