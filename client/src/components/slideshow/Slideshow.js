@@ -66,10 +66,17 @@ const Slideshow = (props) => {
           );
         })
       )}
-      <a className="moreA" href={pageLink}>
-        <Icon className="more-icon" size={`${square - 100}px`} icon={angleDoubleRight} />
-        <h2>More {keyWord}</h2>
+      <div className="more-arrow-container" style={{
+              minWidth: `${square}px`,
+              minHeight: `${square}px`,
+              maxWidth: `${square}px`,
+              maxHeight: `${square}px`,
+            }}>
+        <a className="more-a" href={pageLink}>
+        {/* <Icon className="more-icon" size={`${square - 100}px`} icon={angleDoubleRight} /> */}
+        <h2 className="more-of">More {keyWord}</h2>
       </a>
+      </div>
     </div>
   );
 };

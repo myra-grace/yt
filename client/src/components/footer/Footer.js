@@ -16,7 +16,7 @@ const Footer = () => {
                     <a className="disicon" href="https://discord.gg/qNEUqf"><FaDiscord size={'100%'}/></a>
                 </div>
             </div>
-            <p>noodle_ ship</p>
+            <p>noodle_ship</p>
         </div>
     )
 }

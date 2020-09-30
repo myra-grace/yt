@@ -23,9 +23,11 @@
   height: 80vh;
   margin: 30px 0;
   background-image: url("../../../assets/2ways2improve.png");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: teal;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-attachment: fixed;
 }
