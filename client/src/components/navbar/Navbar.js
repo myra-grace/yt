@@ -4,33 +4,33 @@ import {
   Route,
   Switch,
   Link,
-  Redirect, 
+  Redirect,
   useHistory,
-} from 'react-router-dom';
-import './Navbar.css';
+} from "react-router-dom";
+import "./Navbar.css";
 import { Icon } from "react-icons-kit";
 import { youtubePlay } from "react-icons-kit/fa/youtubePlay";
 
 const Navbar = () => {
-    const [toggle, setToggle] = useState(false);
-    const [mobile, setMobile] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  const [mobile, setMobile] = useState(true);
   const settingsButtonRef = useRef();
   const history = useHistory();
 
   let vw = window.innerWidth;
   let vh = window.innerHeight;
 
-//   useEffect(() => {
-//     window.scrollTo(0,0);
-// }, [])
+  //   useEffect(() => {
+  //     window.scrollTo(0,0);
+  // }, [])
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth',
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     if (vw >= vh) {
@@ -44,52 +44,77 @@ const Navbar = () => {
 
   const handleToggle = () => {
     if (mobile) {
-        const container = settingsButtonRef.current;
-        container.classList.toggle("change");
-        setToggle(!toggle);
+      const container = settingsButtonRef.current;
+      container.classList.toggle("change");
+      setToggle(!toggle);
     }
   };
 
   const handleHome = (event) => {
     event.preventDefault();
+    handleToggle();
     history.push(`/`);
     scrollToTop();
-  }
+  };
   const handleProducts = (event) => {
     event.preventDefault();
-    history.push(`/`);
+    history.push(`/products`);
     handleToggle();
     scrollToTop();
-  }
+  };
 
   const handleTools = (event) => {
     event.preventDefault();
-    history.push(`/`);
+    history.push(`/tools`);
     handleToggle();
     scrollToTop();
-  }
+  };
 
   const handleGallery = (event) => {
     event.preventDefault();
     history.push(`/`);
     handleToggle();
     scrollToTop();
-  }
+  };
 
   const handleAbout = (event) => {
     event.preventDefault();
     history.push(`/about`);
     handleToggle();
     scrollToTop();
-  }
+  };
 
+  //  MOBILE NAV MENU APPEARANCE
   useEffect(() => {
+    let menu = document.getElementById("mobile-nav");
     if (toggle) {
-      document.getElementById("mobile-nav").style.display = "flex";
+      menu.style.visibility = "visible";
+      menu.style.opacity = "1";
+      // menu.style.right = "0";
     } else {
-      document.getElementById("mobile-nav").style.display = "none";
+      menu.style.visibility = "hidden";
+      menu.style.opacity = "0";
+      // menu.style.right = "-500px";
     }
   }, [toggle]);
+
+  let preScroll = window.pageYOffset;
+
+  window.onscroll = () => {
+    let scroll = window.pageYOffset;
+    if (preScroll > scroll) {
+      document.querySelector("header").style.top = "0";
+      if (toggle) {
+        document.getElementById("mobile-nav").style.top = "50px";
+      }
+    } else {
+      document.querySelector("header").style.top = "-200px";
+      if (toggle) {
+        document.getElementById("mobile-nav").style.top = "-200px";
+      }
+    }
+    preScroll = scroll;
+  };
 
   return (
     <div className="navbar-container">

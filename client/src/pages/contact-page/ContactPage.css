@@ -1,0 +1,12 @@
+.contact-page-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.contact-textarea{
+    width: 90vw;
+    height: 20vh;
+    min-width: 300px;
+    max-width: 500px;
+}

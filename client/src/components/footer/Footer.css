@@ -13,7 +13,9 @@
     justify-content: center;
 }
 
-.ytlink, .dislink {
+.ytlink, .dislink, .email {
+    display: grid;
+    place-items: center;
     max-width: 40px;
     max-height: 40px;
     margin: 5px;
@@ -21,4 +23,8 @@
 
 .disicon {
     color: #7289DA;
+}
+
+.emailicon {
+    color: red;
 }

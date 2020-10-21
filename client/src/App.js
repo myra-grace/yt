@@ -8,10 +8,13 @@ import {
   useHistory,
 } from "react-router-dom";
 import "./App.css";
-import Home from "./components/pages/home/Home";
-import About from "./components/pages/about/About";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import ProductsPage from "./pages/products-page/ProductsPage";
+import ToolsPage from "./pages/tools-page/ToolsPage";
+import ContactPage from "./pages/contact-page/ContactPage";
 
 function App() {
   let vw = window.innerWidth;
@@ -20,10 +23,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
+        <header className="header">
+          <Navbar />
+        </header>
         <Switch>
           <Route exact path="/" render={() => <Home vw={vw} vh={vh} />} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/products" component={ProductsPage} />
+          <Route exact path="/tools" component={ToolsPage} />
+          <Route exact path="/contact" component={ContactPage} />
           <Route
             path="/*"
             render={() => (

@@ -1,0 +1,31 @@
+.about-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#banner-about {
+    width: 100vw;
+    height: 80vh;
+    margin: 5vh 0;
+    background-image: url("https://i.redd.it/co6v2ndmvxl21.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: teal;
+}
+
+#overview-about {
+    margin: 5vh 10px;
+}
+
+.about-text {
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.about-text span {
+    margin: 5px 0;
+}

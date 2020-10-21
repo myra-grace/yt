@@ -38,6 +38,14 @@
 /* font-family: "Neoneon"; */
 @import url("//db.onlinewebfonts.com/c/ce0272ed48a4c133bc9a16545b0c6c74?family=Neon+80s");
 /* font-family: "Neon 80s"; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+/* font-family: 'Montserrat Subrayada', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+/* font-family: 'Orbitron', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+/* font-family: 'Megrim', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Megrim&display=swap");
+/* font-family: 'Bungee Hairline', cursive; */
 
 body {
   margin: 0;
@@ -62,21 +70,39 @@ code {
 a, button {
   cursor: pointer;
   text-decoration: none;
-  color: #7c7c7c;
+  color: #01cdfe;
+  font-family: 'Montserrat Subrayada', 'Orbitron', 'Megrim', 'Staatliches' sans-serif;
 }
 
 h1 {
   font-family: 'Outrun future', 'Shadows Into Light', 'Rajdhani', 'Permanent Marker', 'Amatic SC', 'Caveat', cursive;
   text-align: start;
   margin: 30px 10px 10px;
-  color: #75fdff;
+  color: #e301f5;
   text-shadow: 0 0 15px #0c8cb5;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+a, p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+}
+
+a, button {
+  font-family: 'Orbitron', 'Montserrat Subrayada', sans-serif;
+  color: #0c8cb5;
+  text-shadow: 0 0 15px #0c8cb500;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+a:hover, button:hover {
+  color: #75fdff;
+  text-shadow: 0 0 15px #0c8cb5;
 }
 
 .yticon {
