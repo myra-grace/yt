@@ -52,7 +52,9 @@ const Navbar = () => {
 
   const handleHome = (event) => {
     event.preventDefault();
-    handleToggle();
+    if (toggle) {
+      handleToggle();
+    }
     history.push(`/`);
     scrollToTop();
   };
