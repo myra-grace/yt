@@ -2,22 +2,22 @@ import React, { useEffect, useState, useRef } from "react";
 import './ContactPage.css';
 
 const ContactPage = () => {
-    const handleSendEmail = () => {
-        console.log("sent");
-    }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     return (
         <div className="contact-page-container">
             <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <label>Your Name: <input type="text" name="name"/></label>
+            <label>Your Name <br/><input type="text" name="name" required="required"/></label>
           </p>
           <p>
-            <label>Your Email: <input type="email" name="email"/></label>
+            <label>Your Email <br/><input type="email" name="email" required="required"/></label>
           </p>
           <p>
-            <label>Message: <textarea name="message"></textarea></label>
+            <label>Message <br/><textarea name="message" required="required"></textarea></label>
           </p>
           <p>
             <button type="submit">Send</button>
