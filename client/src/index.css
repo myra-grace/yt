@@ -32,7 +32,7 @@
 /* font-family: 'Sedgwick Ave', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 /* font-family: 'Rajdhani', sans-serif; */
-@import url("https://db.onlinewebfonts.com/c/970491b79b0c46e858e11fabbe7d43a7?family=Outrun+future");
+/* @import url("https://db.onlinewebfonts.com/c/970491b79b0c46e858e11fabbe7d43a7?family=Outrun+future"); */
 /* font-family: 'Outrun future'; */
 @import url("https://db.onlinewebfonts.com/c/8174214b59c74c684285ae6b35662282?family=Neoneon");
 /* font-family: "Neoneon"; */
@@ -46,6 +46,10 @@
 /* font-family: 'Megrim', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Megrim&display=swap");
 /* font-family: 'Bungee Hairline', cursive; */
+@font-face {
+  font-family: "Outrun future";
+  src: local("Outrun_future_Bold_Italic"), url(./assets//Outrun_future_Bold_Italic.otf);
+}
 
 body {
   margin: 0;
