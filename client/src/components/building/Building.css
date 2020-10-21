@@ -1,0 +1,9 @@
+.building-container {
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.building-container img {
+    max-width: 100%;
+}

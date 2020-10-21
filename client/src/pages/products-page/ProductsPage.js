@@ -8,11 +8,12 @@ import {
     useHistory,
   } from 'react-router-dom';
 import './ProductsPage.css';
+import Building from '../../components/building/Building';
 
 const ProductsPage = (props) => {
   return (
     <div className="products-page-container">
-        PRODUCTS PAGE
+        <Building />
     </div>
   );
 }

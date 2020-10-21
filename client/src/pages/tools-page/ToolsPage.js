@@ -8,11 +8,12 @@ import {
     useHistory,
   } from 'react-router-dom';
 import './ToolsPage.css';
+import Building from '../../components/building/Building';
 
 const ToolsPage = (props) => {
   return (
     <div className="tools-page-container">
-        TOOLS PAGE
+        <Building />
     </div>
   );
 }
