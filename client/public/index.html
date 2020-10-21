@@ -27,6 +27,22 @@
     <title>noodle_ship</title>
   </head>
   <body>
+    <form
+      className="contact-page-form"
+      name="EmailForm"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input
+        type="email"
+        size="19"
+        name="ContactName"
+        required="required"
+      /><br />
+      <textarea name="ContactComment" required="required"></textarea
+      ><br /><br />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

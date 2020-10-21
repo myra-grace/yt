@@ -51,6 +51,9 @@
   src: local("Outrun_future_Bold_Italic"), url(./assets//Outrun_future_Bold_Italic.otf);
 }
 
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: 'Quicksand', 'Poiret One', 'Yanone Kaffeesatz', 'Prata', 'Amatic SC', 'Shadows Into Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
