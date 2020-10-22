@@ -8,6 +8,7 @@ import {
   useHistory,
 } from "react-router-dom";
 import "./ToolsPage.css";
+import "./../../App.css";
 import ImageGallery from "react-image-gallery";
 import Overview from "../../components/overview/Overview";
 import tuning from "../../assets/tools/20200921_171623.jpg";
@@ -20,7 +21,7 @@ const ToolsPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const images = [
+  const toolsGallery = [
     {
       original: tuning,
       description: "Tune Ukulele",
@@ -46,7 +47,7 @@ const ToolsPage = () => {
   return (
     <div className="tools-page-container">
       <ImageGallery
-        items={images}
+        items={toolsGallery}
         autoPlay={true}
         showPlayButton={false}
         showFullscreenButton={false}
