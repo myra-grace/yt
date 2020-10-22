@@ -98,7 +98,7 @@ const ToolsPage = () => {
       <Overview
         title="Transpose Chords"
         text="I use this site to transpose music to suit my voice range or to change the chord set."
-        link="https://ukutuner.com/"
+        link="https://logue.net/xp/index.htm"
         linktotext="Logue Music Services"
       />
       <div className="splurge-container">
