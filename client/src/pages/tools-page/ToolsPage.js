@@ -77,8 +77,8 @@ const ToolsPage = () => {
       <div className="splurge-container">
         <p>
           There are many sources to find music! Other than{" "}
-          <a href="ukutabs.com">Ukutabs</a>, I also use{" "}
-          <a href="ultimate-guitar.com">Ultimate Guitar</a> and an app called{" "}
+          <a href="https://ukutabs.com">Ukutabs</a>, I also use{" "}
+          <a href="https://ultimate-guitar.com">Ultimate Guitar</a> and an app called{" "}
           <a href="https://play.google.com/store/apps/details?id=com.ukuleletabs&hl=en_CA&gl=US">
             Ukulele Tabs
           </a>
