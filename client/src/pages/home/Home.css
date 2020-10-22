@@ -39,8 +39,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
   background-attachment: fixed;
 }
 

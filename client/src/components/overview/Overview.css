@@ -1,3 +1,7 @@
+.overview-container {
+    padding: 5vh 10px;
+}
+
 .overview-container h1 {
     text-align: center;
 }
