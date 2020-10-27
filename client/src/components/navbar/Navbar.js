@@ -125,6 +125,7 @@ const Navbar = () => {
           <a
             className="yticon"
             href="https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"
+            target="_blank"
           >
             <Icon size={"15px"} icon={youtubePlay} />
           </a>

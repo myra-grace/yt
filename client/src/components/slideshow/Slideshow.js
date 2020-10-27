@@ -50,6 +50,7 @@ const Slideshow = (props) => {
             <a
               className={origin}
               href={plink}
+              target="_blank"
               style={{
                 background: `url("${psrc}")`,
                 backgroundSize: "cover",
@@ -72,7 +73,7 @@ const Slideshow = (props) => {
               maxWidth: `${square}px`,
               maxHeight: `${square}px`,
             }}>
-        <a className="more-a" href={pageLink}>
+        <a className="more-a" href={pageLink} target="_blank">
         {/* <Icon className="more-icon" size={`${square - 100}px`} icon={angleDoubleRight} /> */}
         <h2 className="more-of">More {keyWord}</h2>
       </a>
