@@ -23,7 +23,7 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <div id="news">
-        <Banner catch="Premier Video" title="Joji - Slow Dancing in the Dark" linktotext="Watch Here" link="https://youtu.be/EFqZBQnvRVA"/>
+        <Banner catch="New Video" title="Joji - Slow Dancing in the Dark" linktotext="Watch Here" link="https://youtu.be/EFqZBQnvRVA"/>
       </div>
       <div id="overview-home-moon-ride">
         <Overview title="MoonRide Game" text="Play a simple game I made!" link="https://moon-ride-game.web.app/" linktotext="Play Game" />

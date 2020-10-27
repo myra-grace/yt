@@ -46,7 +46,7 @@ const ProductsPage = (props) => {
       <Overview
         title="My Ukulele"
         text="I use a tenor ukulele: KA-TE by Kala."
-        link="https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"
+        link="https://kalabrand.com/products/ka-te?_pos=6&_sid=dd0867635&_ss=r"
         linktotext="YouTube Channel"
       />
       <div className="splurge-container">
@@ -58,7 +58,7 @@ const ProductsPage = (props) => {
       <Overview
         title="My Strings"
         text="I currently use Aquila Red Low 'G' strings."
-        link="https://www.youtube.com/channel/UCUXucjJ4j_Xc9UP7GpY-f9w"
+        link="https://aquilacorde.com/en/shop/modern-instrument-string-sets/ukulele-banjouke-en/red-series/"
         linktotext="YouTube Channel"
       />
       <div className="splurge-container">

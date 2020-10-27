@@ -79,7 +79,8 @@ const ToolsPage = () => {
         <p>
           There are many sources to find music! Other than{" "}
           <a href="https://ukutabs.com">Ukutabs</a>, I also use{" "}
-          <a href="https://ultimate-guitar.com">Ultimate Guitar</a> and an app called{" "}
+          <a href="https://ultimate-guitar.com">Ultimate Guitar</a> and an app
+          called{" "}
           <a href="https://play.google.com/store/apps/details?id=com.ukuleletabs&hl=en_CA&gl=US">
             Ukulele Tabs
           </a>
@@ -104,11 +105,11 @@ const ToolsPage = () => {
       />
       <div className="splurge-container">
         <p>
-          Transposing music is great for two things. Transposing music basically
-          means you're changing the pitch. Primarily, this is great for matching
-          a song to your voice range. Secondarily, it's also great for changing
-          the chordset ... for perhaps playing with a chordset that's easier to
-          do. #hacks
+          Transposing music basically means you're changing the pitch.
+          Transposing music is great for two things. Primarily, this is great
+          for matching a song to your voice range. Secondarily, it's also great
+          for changing the chordset ... for perhaps playing with a chordset
+          that's easier to do. #hacks
         </p>
       </div>
       <Overview
